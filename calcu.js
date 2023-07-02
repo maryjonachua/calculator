@@ -20,7 +20,7 @@ arrayButton.forEach(button => {
         }
 
         else if(e.target.innerHTML == '%'){
-            calculation = (eval(calculation))/100;
+            calculation = eval(calculation)/100;
             data.value =calculation ;
             
         }   

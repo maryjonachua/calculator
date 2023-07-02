@@ -18,6 +18,12 @@ arrayButton.forEach(button => {
             calculation = calculation.substring(0, calculation.length-1);
             data.value = calculation;
         }
+
+        else if(e.target.innerHTML == '%'){
+            calculation = (eval(calculation))/100;
+            data.value =calculation ;
+            
+        }   
         else{
             calculation += e.target.innerHTML;
             data.value = calculation;

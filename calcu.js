@@ -19,12 +19,13 @@ arrayButton.forEach(button => {
             data.value = calculation;
         }
 
-else if(e.target.innerHTML == '%'){
-
-let result = eval(calculation)/100;
-calculation = result;
-data.value = calculation;
-}
+        else if(e.target.innerHTML == '%'){
+        
+        let result = eval(calculation)/100;
+        calculation = result;
+        data.value = calculation;
+        }
+            
         else{
             calculation += e.target.innerHTML;
             data.value = calculation;
